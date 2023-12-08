@@ -1,0 +1,1 @@
+Os Triggers são usados para realizar tarefas relacionadas com validações , restrições de acesso , rotinas de segurança e consistência de dados ; desta forma estes controles deixam de ser executados pela aplicação e passam a ser executados pelos Triggers em determinadas situações
