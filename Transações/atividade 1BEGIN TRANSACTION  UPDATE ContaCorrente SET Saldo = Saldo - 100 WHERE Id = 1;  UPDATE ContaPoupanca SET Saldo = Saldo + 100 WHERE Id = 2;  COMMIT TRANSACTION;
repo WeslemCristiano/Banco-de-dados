@@ -1,0 +1,33 @@
+BEGIN TRANSACTION
+
+UPDATE ContaCorrente
+SET Saldo = Saldo - 100
+WHERE Id = 1;
+
+UPDATE ContaPoupanca
+SET Saldo = Saldo + 100
+WHERE Id = 2;
+
+COMMIT TRANSACTION;
+
+BEGIN TRANSACTION
+
+INSERT INTO Produtos (Nome, Descrição, Preço)
+VALUES ('Nome do produto', 'Descrição do produto', 100);
+
+COMMIT TRANSACTION;
+
+BEGIN TRANSACTION
+
+DELETE FROM Clientes
+WHERE Id = 1;
+
+COMMIT TRANSACTION;
+
+BEGIN TRANSACTION
+
+UPDATE Pedidos
+SET Status = 'Entregue'
+WHERE Id = 1;
+
+COMMIT TRANSACTION;
